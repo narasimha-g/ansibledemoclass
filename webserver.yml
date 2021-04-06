@@ -1,6 +1,6 @@
 ---
  #- name:  install webservers
-   hosts:  webservers
+ - hosts:  webservers
    become: yes
    #gather_facts: true
    tasks:
