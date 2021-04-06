@@ -1,0 +1,19 @@
+---
+ - name:  install webservers
+   hosts:  webservers
+   become: yes
+   gather_facts: true
+   tasks:
+    - name: i want to my all nodes or slaves
+      ping:
+
+    - name: i want to install apache2
+      apt:
+        name: apache2 
+        state: present 
+
+    - name:  i want to start the service 
+      service: 
+        name: apache2 
+        state: start
+    
