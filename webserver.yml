@@ -1,11 +1,11 @@
 ---
- - name:  install webservers
+ #- name:  install webservers
    hosts:  webservers
    become: yes
-   gather_facts: true
+   #gather_facts: true
    tasks:
-    - name: i want to my all nodes or slaves
-      ping:
+    #- name: i want to my all nodes or slaves
+   #   ping:
 
     - name: i want to install apache2
       apt:
